@@ -1,0 +1,80 @@
+.fc { /* FullCalendar 기본 클래스 */
+    max-width: 900px;
+    margin: 0 auto;
+}
+h6{
+    display: none;
+}
+.fc .fc-daygrid-day-frame {
+    display: flex;
+    justify-content: flex-start; /* 내용물을 왼쪽으로 정렬 */
+    align-items: flex-start; /* 세로축에서도 상단에 배치 */
+    padding: 5px; /* 텍스트와 가장자리 사이에 여백 추가 */
+}
+
+.fc-daygrid-day-number {
+    color: black; /* 글씨를 검정색으로 */
+    text-decoration: none; /* hover 시 밑줄 없애기 */
+}
+.fc-col-header-cell-cushion {
+    color: black;
+}
+
+.fc-daygrid-day-number:hover {
+    text-decoration: none; /* hover 시 밑줄 없애기 */
+}
+.fc-createEventButton-button {
+    margin-left: 10px !important;
+}
+.fc-toolbar .fc-button {
+    border: 1px solid #ddd; /* 모든 버튼에 동일한 테두리 적용 */
+    background-color: white; /* 버튼 배경색을 통일 */
+    color: black; /* 텍스트 색을 통일 */
+}
+
+.fc-toolbar .fc-button-primary {
+    border-color: #ddd; /* primary 버튼도 동일한 테두리로 */
+    background-color: white; /* primary 버튼의 배경색을 기본 버튼과 동일하게 */
+    color: black; /* 텍스트 색상도 통일 */
+}
+
+.fc-scrollgrid-sync-inner {
+    text-align: left;
+}
+
+.fc .fc-col-header-cell {
+    border-bottom: none; /* 요일 아래 구분선을 없앰 */
+}
+
+.fc .fc-col-header-cell-cushion {
+    border-bottom: none;
+}
+.fc .fc-daygrid-day {
+    border-top: none; /* 날짜 위쪽 구분선 제거 */
+}
+
+/* 요일 부분 */
+.fc-day-sun .fc-col-header-cell-cushion {
+    color: red; /* 일요일 글씨 빨간색 */
+}
+
+.fc-day-sat .fc-col-header-cell-cushion {
+    color: blue; /* 토요일 글씨 파란색 */
+}
+
+.fc-day-mon .fc-col-header-cell-cushion,
+.fc-day-tue .fc-col-header-cell-cushion,
+.fc-day-wed .fc-col-header-cell-cushion,
+.fc-day-thu .fc-col-header-cell-cushion,
+.fc-day-fri .fc-col-header-cell-cushion {
+    color: #333; /* 월~금 글씨 진한 회색 */
+}
+
+/* 날짜 부분 */
+.fc-day-sun .fc-daygrid-day-top .fc-daygrid-day-number {
+    color: red; /* 일요일 날짜 숫자 빨간색 */
+}
+
+.fc-day-sat .fc-daygrid-day-top .fc-daygrid-day-number {
+    color: blue; /* 토요일 날짜 숫자 파란색 */
+}

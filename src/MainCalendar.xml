@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.maincalendar.MainCalendar" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Main Calendar</name>
+    <description>FullCalendar integration widget for Mendix</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <!-- 마이크로플로우 속성 추가 -->
+            <property key="onCreateEvent" type="action" required="false">
+                <caption>일정 생성 시</caption>
+                <description>이벤트가 생성될 때 실행</description>
+            </property>
+            <property key="onClickEvent" type="action" required="false">
+                <caption>일자 클릭 시</caption>
+                <description>일자 클릭 시 실행</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
